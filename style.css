@@ -242,3 +242,64 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+/*Estilo Tabela Ações*/
+/*Alterado o CSS apenas com a inclusão das linhas abaixo - data 30/05/23 */
+* {
+	box-sizing: border-box;
+}
+
+#container {
+	flex: 1 0 auto; 
+	padding-bottom: 20px;	
+}
+
+#search {
+	padding: 10px 0px 10px 20px;
+	background-color: #DBDBDB;	
+}
+
+#error {
+	background-color: red;
+	color: yellow;
+	padding: 10px 0px 10px 20px;
+	display: none;
+}
+
+.input-width {
+	width: 180px !important;
+}
+
+#wrapper {
+	display: flex;	
+	flex-direction: row;
+	margin-top: 30px;	
+}
+
+.table {
+	text-align: center;
+}
+
+.table-div {
+	padding: 10px 10px 10px 10px;
+	width: 35%;	
+	border: 1px solid #000;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.column-chart {
+	width: 65%;
+	height: 300px;
+	border: 1px solid #000;
+	margin-right: 20px;
+}
+
+.line-chart {	
+	height: 300px;	
+	border: 1px solid #000;
+	padding: 10px 10px 10px 10px;
+	margin: 20px 20px 20px 20px;
+}
+
+
