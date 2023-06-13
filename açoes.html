@@ -1,92 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">		
     <title>PI</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>	
 </head>
 <body>
-    <header>
+      <header>
       <a href="index.html">
         <img src="/img/logo.png" alt="logo" class="logo"/>
       </a>
         <nav>
             <ul class="sublinhado">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="noticias.html">Notícias</a></li>
-                <li><a href="açoes.html">Ações</a></li>
-                <li><a href="commodities">Commodities</a></li>
-                <li><a href="moedas.html">Moedas</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="index.html" class="aba">Home</a></li>
+                <li><a href="noticias.html" class="aba">Notícias</a></li>
+                <li><a href="açoes.html" class="aba">Ações</a></li>
+                <li><a href="commodities.html" class="aba">Commodities</a></li>
+                <li><a href="moedas.html" class="aba">Moedas</a></li>
+                <li><a href="sobre.html" class="aba">Sobre</a></li>
             </ul>
         </nav>
     </header>
-
-<div id="container">	
-    <!-- Menu superior -->
+    <div class="imagem_1">
+      <h1 class="frase-imagem_1">TUDO SOBRE AS AÇÕES<br>LISTADAS NA BOLSA DE<br>VALORES!</h1>
+    </div>
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
- 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">			
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Página inicial</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobre.html">Sobre</a>
-            </li>			
-          </ul>
+    <section class="aba-açoes">
+      <div class="lado2">
+        <p><a href="/img/ações02.png" target="iframe_b" class="menu-açoes1">ALTA</a></p>
+        <p><a href="/img/Ações01.png" target="iframe_b" class="menu-açoes2">BAIXA</a></p>
+        <a href="/img/Ações01.png" target="iframe_b"><img src="/img/seta ações02.png" class="seta2" /></a>
+        <a href="/img/Ações02.png" target="iframe_b"><img src="/img/seta ações01.png" class="seta1" /></a>
+      </div>
+      <div>
+        <iframe src="/img/Ações02.png" name="iframe_b" height="735px" width="71%" class="iframe2"></iframe>
+      </div>
+    </section>
+
+    <section class="aba-açoes2">
+      <div>
+        <h3 class="titulo-ebooks">EBOOKS GRATUITOS</h3>
+      </div>
+      <div class="ebooks">
+        <div class="retangulo-ebook">
+          <img src="/img/ebook1.png" class="img-ebook1"/>
+          <p><a href="https://lp.suno.com.br/ebook-10-livros/" class="text-ebook1">10 livros que todo investidor deveria ler</a></p>
+          <p class="text-ebook11">Fizemos para você uma seleção de 10 livros que todo investidor deveria ler</p>
+          <a href="https://lp.suno.com.br/ebook-10-livros/" class="botao-ebook1">Saiba mais</a>
+        </div>
+        <div class="retangulo-ebook">
+          <img src="/img/ebook2.png" class="img-ebook1"/>
+          <p><a href="https://lp.suno.com.br/ebook-guia-ir/" class="text-ebook1">Declarando o Imposto de Renda</a></p>
+          <p class="text-ebook11">Entenda como declarar o seu IR sem medo de surpresas com o leão</p>
+          <a href="https://lp.suno.com.br/ebook-guia-ir/" class="botao-ebook2">Saiba mais</a>
+        </div>
+        <div class="retangulo-ebook">
+          <img src="/img/ebook3.png" class="img-ebook1"/>
+          <p><a href="https://lp.suno.com.br/ebook-como-analisar-uma-acao/" class="text-ebook1">Como analisar uma ação</a></p>
+          <p class="text-ebook11">Aprenda os passos e cuidados na hora de se analisar uma empresa para investir na Bolsa de Valores</p>
+          <a href="https://lp.suno.com.br/ebook-como-analisar-uma-acao/" class="botao-ebook3">Saiba mais</a>
+        </div>
+        <div class="retangulo-ebook">
+          <img src="/img/ebook4.png" class="img-ebook1"/>
+          <p><a href="https://lp.suno.com.br/ebook-investindo-em-fiis/" class="text-ebook1">Investindo em FIIS</a></p>
+          <p class="text-ebook11">Investir em fundos imobiliários é uma das melhores formas de se investir em imóveis.</p>
+          <a href="https://lp.suno.com.br/ebook-investindo-em-fiis/" class="botao-ebook4">Saiba mais</a>
         </div>
       </div>
-    </nav>	
+      
+    </section>
     
-    
-    <!-- Formulário de pesquisa de ativo -->
-    
-    <div id="search">
-        <form class="d-flex" action="" method="POST" id="myForm">
-          <input class="form-control me-2 input-width" type="search" id="txtSymbol" placeholder="PETR4.SA" aria-label="Search">
-          <button class="btn btn-success" type="button" onclick="validar()">Pesquisar</button>
-        </form>		
-    </div>
-    
-    <!-- Informações sobre erros -->
-    <div id="error">
-        Deu erro!
-    </div>
-    
-    <!-- Exibição dos dados -->
-    
-    <div id="wrapper">
-        <div id="table" class="table-div">
-            <table id="series-table" class="table">
-              <thead>
-                <tr class="table-primary">			  
-                  <th scope="col">Data</th>
-                  <th scope="col">Abertura</th>
-                  <th scope="col">Fechamento</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>	
-        </div>
-        
-        <div id="chart-column" class="column-chart"></div>
-    </div>
-    
-    <div class="col-md-12">
-    <div id="chart-line" class="line-chart"></div>
-    </div>		
-</div>
-
-<footer>
-    <hr class="linha1">
-    <p>&copy; DGPR | Todos os direitos reservados.</p>7
-    <script type="text/javascript" src="./js/alphavantage.js"></script>			
-	<script type="text/javascript" src="./bootstrap/dist/js/bootstrap.min.js"></script>
-  </footer>
+    <footer>
+      <hr class="linha1">
+      <p>&copy; DGPR | Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
